@@ -1,0 +1,17 @@
+<script>
+  const num = 1;
+  console.log(num.toString());
+  const arr = [1, 2, 3, "a", "b", "c"];
+  const callbackfn = (v, i, a) => {
+    console.log(`arr[${i}] = ${v}`);
+  };
+  arr.forEach(callbackfn);
+
+  const predicate1 = (v, i, a) => {
+    return v == 1;
+  };
+
+  console.log(arr.filter(predicate1));
+
+  console.log(arr.map((v) => v + 1));
+</script>

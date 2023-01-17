@@ -1,0 +1,18 @@
+<script>
+  //기본적으로 const 사용
+  //값을 변경해야되면 const -> let으로 변경
+  //함수 스코프를 사용해야 되면 let -> var로 변경 (주의)
+  let result = false;
+  result = confirm("확인");
+  if (result) {
+    alert("확인");
+  } else {
+    alert("취소");
+  }
+  var numbers = [1,2,3,4,5];
+  var answer = 0;
+  for(const index in numbers){
+    answer += numbers;
+  }
+  answer = answer/numbers.length
+</script>
